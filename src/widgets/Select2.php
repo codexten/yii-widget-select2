@@ -11,5 +11,8 @@ namespace codexten\yii\widgets;
 
 class Select2 extends \kartik\select2\Select2
 {
+    public $options = [
+        'placeholder' => '',
+    ];
 
 }
