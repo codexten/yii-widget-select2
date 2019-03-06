@@ -1,0 +1,21 @@
+{
+  "name": "codexten/yii-widget-select2",
+  "type": "yii2-extension",
+  "description": " select2 widget for yii 2.0 or higher",
+  "require": {
+    "kartik-v/yii2-widget-select2": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\widgets\\select2\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "bootstrap3": "config/select2.php"
+    }
+  }
+}
