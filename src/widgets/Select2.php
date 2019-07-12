@@ -20,6 +20,7 @@ class Select2 extends \kartik\select2\Select2
     public $data = null;
     public $idField = 'id';
     public $textField = 'name';
+    public $allowClear = true;
 
     /**
      * @inheritdoc
@@ -45,6 +46,9 @@ class Select2 extends \kartik\select2\Select2
         if ($this->url) {
             $this->pluginOptions['ajax']['url'] = Url::to($this->url);
             $this->pluginOptions['ajax']['processResults'] = new JsExpression($this->processResults());
+        }
+        if (!isset($this->pluginOptions['allowClear'])) {
+            $this->pluginOptions['allowClear'] = $this->allowClear;
         }
     }
 
