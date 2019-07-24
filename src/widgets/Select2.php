@@ -36,9 +36,10 @@ class Select2 extends \kartik\select2\Select2
      */
     public function normalize()
     {
-        if ($this->placeholder) {
-            $this->options['placeholder'] = $this->placeholder;
+        if ($this->placeholder !== null) {
+            $this->pluginOptions['placeholder'] = $this->placeholder;
         }
+
         if ($this->initValue) {
             $this->initValueText = $this->initValue;
         }
